@@ -110,7 +110,7 @@ function expandByLocation(docs, lang) {
     return;
   }
 
-  docs.forEach(function(doc) {
+  /*docs.forEach(function(doc) {
     if(!east) {
       east=west=north=south=doc;
     } else {
@@ -245,6 +245,7 @@ function expandByLocation(docs, lang) {
       expandName(middle, 'central');
     }
   }
+  */
   return names;
 }
 
