@@ -26,6 +26,7 @@ if (api && api.localization && api.localization.labelSchemas) {
       );
     }
     schemas[country] = schema;
+    console.log(schemas["USA"]);
   }
 }
 
