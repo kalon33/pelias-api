@@ -10,6 +10,7 @@ module.exports = function( record, req ){
 
   // in virtually all cases, this will be the `name` field
   var labelParts = getInitialLabel(record);
+  console.log(labelParts);
 
 
   // iterate the schema
