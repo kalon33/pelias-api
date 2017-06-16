@@ -11,6 +11,7 @@ var schemas = {
 
 if (api && api.localization && api.localization.labelSchemas) {
   var imported = api.localization.labelSchemas;
+  console.log(imported);
 
   for (var country in imported) {
     var schema = imported[country];
