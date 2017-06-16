@@ -43,8 +43,8 @@ function baseVal(val) {
 // find the first field of record that has a non-empty value that's not already in labelParts
 function getFirstProperty(fields, matchType, targets) {
   return function(record, req) {
-    console.log("REQ");
-    console.log(req);
+    console.log("RECORD");
+    console.log(record);
     if (targets && targets.indexOf(record.layer)===-1) {
       return null; // not applicable to this kind of record
     }
