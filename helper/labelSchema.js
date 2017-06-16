@@ -16,7 +16,9 @@ if (api && api.localization && api.localization.labelSchemas) {
 
   for (var country in imported) {
     var schema = imported[country];
+
     for (var key in schema) { // convert to the convention above
+      console.log(schema[key].fields);
       schema[key] = getFirstProperty(  // param array to func
         schema[key].fields,
         schema[key].matchType,

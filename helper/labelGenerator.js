@@ -16,7 +16,6 @@ module.exports = function( record, req ){
   // iterate the schema
   for (var field in schema) {
     var valueFunction = schema[field];
-    console.log(valueFunction);
     var value = valueFunction(record, req);
     if(value) {
       labelParts.push(value);
