@@ -9,6 +9,7 @@ var schemas = {
   }
 };
 
+console.log(api);
 if (api && api.localization && api.localization.labelSchemas) {
   var imported = api.localization.labelSchemas;
   console.log(imported);
