@@ -15,6 +15,7 @@ if (api && api.localization && api.localization.labelSchemas) {
   console.log(imported);
 
   for (var country in imported) {
+    console.log(country);
     var schema = imported[country];
 
     for (var key in schema) { // convert to the convention above
