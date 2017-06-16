@@ -70,7 +70,8 @@ function getFirstProperty(fields, matchType, targets) {
           fieldValue = parts.join(' ');
         }
       } else {
-        fieldValue = baseVal(record[field]);
+        //fieldValue = baseVal(record[field]);
+        fieldValue = record[field];
       }
       if (!_.isEmpty(fieldValue)) {
         if(matchRegions) {
