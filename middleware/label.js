@@ -7,7 +7,6 @@ var logger = require('pelias-logger').get('api:label');
    without actually adding it to the name.  The client can display a layer specific
    icon to make a difference between identical labels
 */
-console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 var ignoreLayer = false;
 
 function setup() {

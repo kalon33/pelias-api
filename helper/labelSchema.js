@@ -9,17 +9,14 @@ var schemas = {
   }
 };
 
-console.log(api);
 if (api && api.localization && api.localization.labelSchemas) {
   var imported = api.localization.labelSchemas;
-  console.log(imported);
 
   for (var country in imported) {
-    console.log(country);
+
     var schema = imported[country];
 
     for (var key in schema) { // convert to the convention above
-      console.log(schema[key].fields);
       schema[key] = getFirstProperty(  // param array to func
         schema[key].fields,
         schema[key].matchType,
@@ -27,7 +24,6 @@ if (api && api.localization && api.localization.labelSchemas) {
       );
     }
     schemas[country] = schema;
-    console.log(schemas["USA"]);
   }
 }
 
@@ -43,8 +39,6 @@ function baseVal(val) {
 // find the first field of record that has a non-empty value that's not already in labelParts
 function getFirstProperty(fields, matchType, targets) {
   return function(record, req) {
-    console.log("RECORD");
-    console.log(record);
     if (targets && targets.indexOf(record.layer)===-1) {
       return null; // not applicable to this kind of record
     }
