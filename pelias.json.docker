@@ -1,6 +1,6 @@
 {
   "esclient": {
-    "apiVersion": "2.3",
+    "apiVersion": "2.4",
     "keepAlive": true,
     "requestTimeout": "20000",
     "hosts": [
@@ -49,6 +49,7 @@
       }
     },
     "languages": [
+      "fr",
       "fi",
       "default",
       "sv",
@@ -65,16 +66,16 @@
       "sorting"
     ],
     "languageMap": {
-      "default":"fi",
-      "local":"fi",
-      "alternative":"fi",
-      "international":"fi",
-      "national":"fi",
-      "official":"fi",
-      "old":"fi",
-      "regional":"fi",
-      "short":"fi",
-      "sorting":"fi"
+      "default":"fr",
+      "local":"fr",
+      "alternative":"fr",
+      "international":"fr",
+      "national":"fr",
+      "official":"fr",
+      "old":"fr",
+      "regional":"fr",
+      "short":"fr",
+      "sorting":"fr"
     },
     "localization" : {
       "confidenceAdminWeights": {
@@ -90,13 +91,12 @@
         "street": {"parent":"address_parts", "field":"street", "numeric": false, "weight": 2},
         "postalcode": {"parent":"address_parts", "field":"zip", "numeric": false, "weight": 1}
       },
-      "filteredRegions": ["suomi", "finland"],
+      "filteredRegions": ["france"],
       "cleanRegions": true,
       "postalCodeValidator": "^[0-9]{5}$",
       "streetNumberValidator": "^[0-9].*$",
-      "translations": "/opt/pelias/api/translations.json",
       "equalCharMap": {
-        "é":"e",
+        "Ã©":"e",
         "'":"",
         "-":" "
       },
